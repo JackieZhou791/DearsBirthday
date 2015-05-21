@@ -1,25 +1,156 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fF0-8u-RaU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Birthday List-->
+        <scene sceneID="dt1-Ib-nPy">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <navigationController id="ViS-Ze-BD4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Birthday List" id="Wxu-j0-I2E"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kfW-Bg-Ik5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6cm-KZ-NZ8" kind="relationship" relationship="rootViewController" id="OUz-hO-XH7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQE-IP-rsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="357" y="15"/>
+        </scene>
+        <!--Birthday List-->
+        <scene sceneID="OdQ-ng-vCp">
+            <objects>
+                <tableViewController id="6cm-KZ-NZ8" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rgk-2V-aVh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BirthdayCell" id="Idq-bC-1ty">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Idq-bC-1ty" id="efe-ru-NKe">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6cm-KZ-NZ8" id="Vbq-o3-IwW"/>
+                            <outlet property="delegate" destination="6cm-KZ-NZ8" id="h8U-Oj-sol"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Birthday List" id="wLQ-2b-ljs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SEB-BF-x86">
+                            <connections>
+                                <segue destination="zI8-tJ-ku2" kind="modal" id="oD9-cI-1D3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPw-8W-iGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="11"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="koe-qS-mwZ">
+            <objects>
+                <navigationController id="zI8-tJ-ku2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4MR-8k-J9i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QUN-zX-kfq" kind="relationship" relationship="rootViewController" id="w4g-T2-nVe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SqP-IE-ROp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="14"/>
+        </scene>
+        <!--Add Birthday-->
+        <scene sceneID="7zE-Gv-IZX">
+            <objects>
+                <tableViewController id="QUN-zX-kfq" customClass="BirthdayDetailViewController" customModule="DearsBirthday" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jq5-BI-6GN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddBirthday" id="YR6-Jh-OJX">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YR6-Jh-OJX" id="a2t-Lw-BKO">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QUN-zX-kfq" id="Oka-b8-7pe"/>
+                            <outlet property="delegate" destination="QUN-zX-kfq" id="6yb-wB-2Yd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Birthday" id="K6w-Ks-vQM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="e5I-EP-ILI">
+                            <connections>
+                                <segue destination="u3B-W4-HJW" kind="unwind" unwindAction="cancelToBirthdayViewController:" id="IQS-Do-78C"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="rOW-lH-bmO">
+                            <connections>
+                                <segue destination="u3B-W4-HJW" kind="unwind" unwindAction="saveBirthdayDetail:" id="uD0-qc-Nyo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDq-Gr-GZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="u3B-W4-HJW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="9"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="RMs-b0-pKP">
+            <objects>
+                <viewController id="y7Y-72-mHY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uaf-Jz-wck">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" id="8aS-Rs-4HN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQp-fr-nBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357.86666666666667" y="675.91999999999996"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tQx-q5-aW2">
+            <objects>
+                <tabBarController id="fF0-8u-RaU" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zB0-Ok-08K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ViS-Ze-BD4" kind="relationship" relationship="viewControllers" id="pr7-r1-vYI"/>
+                        <segue destination="y7Y-72-mHY" kind="relationship" relationship="viewControllers" id="FZi-EG-K7A"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHO-vu-rxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.466666666666669" y="362.57333333333332"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

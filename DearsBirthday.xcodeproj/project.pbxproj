@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CAF46591B0DA757000C6C16 /* BirthdayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF46581B0DA757000C6C16 /* BirthdayDetailViewController.swift */; };
+		8CBB94311B05C3BD00618F01 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB94301B05C3BD00618F01 /* BirthdayViewController.swift */; };
 		8CD358111B058F1700F4F288 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD358101B058F1700F4F288 /* AppDelegate.swift */; };
 		8CD358141B058F1700F4F288 /* DearsBirthday.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CD358121B058F1700F4F288 /* DearsBirthday.xcdatamodeld */; };
 		8CD358161B058F1700F4F288 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD358151B058F1700F4F288 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8CAF46581B0DA757000C6C16 /* BirthdayDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayDetailViewController.swift; sourceTree = "<group>"; };
+		8CBB94301B05C3BD00618F01 /* BirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BirthdayViewController.swift; path = ../BirthdayViewController.swift; sourceTree = "<group>"; };
 		8CD3580B1B058F1700F4F288 /* DearsBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DearsBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD3580F1B058F1700F4F288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CD358101B058F1700F4F288 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,12 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				8CD358101B058F1700F4F288 /* AppDelegate.swift */,
+				8CBB94301B05C3BD00618F01 /* BirthdayViewController.swift */,
 				8CD358151B058F1700F4F288 /* ViewController.swift */,
 				8CD358171B058F1700F4F288 /* Main.storyboard */,
 				8CD3581A1B058F1700F4F288 /* Images.xcassets */,
 				8CD3581C1B058F1700F4F288 /* LaunchScreen.xib */,
 				8CD358121B058F1700F4F288 /* DearsBirthday.xcdatamodeld */,
 				8CD3580E1B058F1700F4F288 /* Supporting Files */,
+				8CAF46581B0DA757000C6C16 /* BirthdayDetailViewController.swift */,
 			);
 			path = DearsBirthday;
 			sourceTree = "<group>";
@@ -216,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD358161B058F1700F4F288 /* ViewController.swift in Sources */,
+				8CBB94311B05C3BD00618F01 /* BirthdayViewController.swift in Sources */,
 				8CD358141B058F1700F4F288 /* DearsBirthday.xcdatamodeld in Sources */,
 				8CD358111B058F1700F4F288 /* AppDelegate.swift in Sources */,
+				8CAF46591B0DA757000C6C16 /* BirthdayDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +421,7 @@
 				8CD3582F1B058F1700F4F288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CD358301B058F1700F4F288 /* Build configuration list for PBXNativeTarget "DearsBirthdayTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +430,7 @@
 				8CD358321B058F1700F4F288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
