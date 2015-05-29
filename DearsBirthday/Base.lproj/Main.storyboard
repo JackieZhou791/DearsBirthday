@@ -221,27 +221,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable showing days out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cal-kl-8nJ">
-                                <rect key="frame" x="16" y="556" width="221" height="24"/>
+                                <rect key="frame" x="16" y="501" width="221" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="gdJ-hy-h4q">
-                                <rect key="frame" x="535" y="549" width="51" height="31"/>
+                                <rect key="frame" x="245" y="501" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="Mx3-57-tvx" eventType="valueChanged" id="npR-fh-eOH"/>
                                 </connections>
                             </switch>
-                            <view contentMode="scaleToFill" id="6ie-dm-9iv" customClass="CVCalendarView" customModule="DearsBirthday" customModuleProvider="target">
-                                <rect key="frame" x="16" y="103" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="calendarAppearanceDelegate" destination="Mx3-57-tvx" id="sM5-SC-iDi"/>
-                                    <outlet property="calendarDelegate" destination="Mx3-57-tvx" id="IIr-dK-PUS"/>
-                                </connections>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autolayout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o1B-xI-50Y">
                                 <rect key="frame" x="119" y="411" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -269,16 +261,6 @@
                                     <action selector="toMonthView:" destination="Mx3-57-tvx" eventType="touchUpInside" id="0jX-f8-bQa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cio-zM-Q0w">
-                                <rect key="frame" x="145" y="440" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt;">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loadPrevious:" destination="Mx3-57-tvx" eventType="touchUpInside" id="ZUE-9H-mcv"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZfV-r0-UUd">
                                 <rect key="frame" x="165" y="440" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -289,6 +271,24 @@
                                     <action selector="loadNext:" destination="Mx3-57-tvx" eventType="touchUpInside" id="gEW-Rg-ti5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cio-zM-Q0w">
+                                <rect key="frame" x="145" y="440" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadPrevious:" destination="Mx3-57-tvx" eventType="touchUpInside" id="ZUE-9H-mcv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="6ie-dm-9iv" customClass="CVCalendarView" customModule="DearsBirthday" customModuleProvider="target">
+                                <rect key="frame" x="16" y="103" width="288" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="calendarAppearanceDelegate" destination="Mx3-57-tvx" id="sM5-SC-iDi"/>
+                                    <outlet property="calendarDelegate" destination="Mx3-57-tvx" id="IIr-dK-PUS"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
