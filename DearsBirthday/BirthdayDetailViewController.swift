@@ -10,35 +10,59 @@ import UIKit
 
 class BirthdayDetailViewController: UITableViewController {
 
+
+    @IBOutlet weak var birthdayBtn: UIButton!
+    @IBOutlet weak var birthday_name: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.birthdayBtn.addTarget(self, action:"buttonClick:", forControlEvents: UIControlEvents.TouchUpInside)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    func buttonClick(sender:UIButton!)
+    {
+        println("hello world")
+        let addViewController =
+//        let AddViewControllerIdentifier = "CalendarHomeViewController"
+//        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+//        let addViewController: CalendarHomeViewController = storyboard.instantiateViewControllerWithIdentifier(AddViewControllerIdentifier) as! CalendarHomeViewController
+        self.navigationController?.pushViewController(addViewController, animated: true)
+        
+    }
 
+    
+    /*
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
-
+    
+    */
+    
+    /*
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
         return 0
     }
-
+    
+    */
+    
+    /*
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
         return 0
     }
-
+    */
+    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
@@ -95,6 +119,8 @@ class BirthdayDetailViewController: UITableViewController {
     */
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        println("In prepareForSegue action")
     }
 
 }

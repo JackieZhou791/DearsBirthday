@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1FAA091B14874D000D1F12 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1FAA081B14874D000D1F12 /* Birthday.swift */; };
 		8CAF46591B0DA757000C6C16 /* BirthdayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF46581B0DA757000C6C16 /* BirthdayDetailViewController.swift */; };
 		8CBB94311B05C3BD00618F01 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB94301B05C3BD00618F01 /* BirthdayViewController.swift */; };
 		8CD358111B058F1700F4F288 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD358101B058F1700F4F288 /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 		8CD3581B1B058F1700F4F288 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD3581A1B058F1700F4F288 /* Images.xcassets */; };
 		8CD3581E1B058F1700F4F288 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD3581C1B058F1700F4F288 /* LaunchScreen.xib */; };
 		8CD3582A1B058F1700F4F288 /* DearsBirthdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD358291B058F1700F4F288 /* DearsBirthdayTests.swift */; };
+		8CE7C1091B180FB5006A944A /* CVCalendar in Resources */ = {isa = PBXBuildFile; fileRef = 8CE7C1081B180FB5006A944A /* CVCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C1FAA081B14874D000D1F12 /* Birthday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
 		8CAF46581B0DA757000C6C16 /* BirthdayDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayDetailViewController.swift; sourceTree = "<group>"; };
 		8CBB94301B05C3BD00618F01 /* BirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BirthdayViewController.swift; path = ../BirthdayViewController.swift; sourceTree = "<group>"; };
 		8CD3580B1B058F1700F4F288 /* DearsBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DearsBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +45,7 @@
 		8CD358231B058F1700F4F288 /* DearsBirthdayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DearsBirthdayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD358281B058F1700F4F288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CD358291B058F1700F4F288 /* DearsBirthdayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DearsBirthdayTests.swift; sourceTree = "<group>"; };
+		8CE7C1081B180FB5006A944A /* CVCalendar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CVCalendar; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		8CD3580D1B058F1700F4F288 /* DearsBirthday */ = {
 			isa = PBXGroup;
 			children = (
+				8CE7C1081B180FB5006A944A /* CVCalendar */,
 				8CD358101B058F1700F4F288 /* AppDelegate.swift */,
 				8CBB94301B05C3BD00618F01 /* BirthdayViewController.swift */,
 				8CD358151B058F1700F4F288 /* ViewController.swift */,
@@ -92,6 +97,7 @@
 				8CD358121B058F1700F4F288 /* DearsBirthday.xcdatamodeld */,
 				8CD3580E1B058F1700F4F288 /* Supporting Files */,
 				8CAF46581B0DA757000C6C16 /* BirthdayDetailViewController.swift */,
+				8C1FAA081B14874D000D1F12 /* Birthday.swift */,
 			);
 			path = DearsBirthday;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD358191B058F1700F4F288 /* Main.storyboard in Resources */,
+				8CE7C1091B180FB5006A944A /* CVCalendar in Resources */,
 				8CD3581E1B058F1700F4F288 /* LaunchScreen.xib in Resources */,
 				8CD3581B1B058F1700F4F288 /* Images.xcassets in Resources */,
 			);
@@ -223,6 +230,7 @@
 			files = (
 				8CD358161B058F1700F4F288 /* ViewController.swift in Sources */,
 				8CBB94311B05C3BD00618F01 /* BirthdayViewController.swift in Sources */,
+				8C1FAA091B14874D000D1F12 /* Birthday.swift in Sources */,
 				8CD358141B058F1700F4F288 /* DearsBirthday.xcdatamodeld in Sources */,
 				8CD358111B058F1700F4F288 /* AppDelegate.swift in Sources */,
 				8CAF46591B0DA757000C6C16 /* BirthdayDetailViewController.swift in Sources */,
@@ -307,6 +315,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DearsBirthday/DearsBirthday-Brigding-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -344,6 +353,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "DearsBirthday/DearsBirthday-Brigding-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -355,6 +365,7 @@
 				INFOPLIST_FILE = DearsBirthday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -365,6 +376,7 @@
 				INFOPLIST_FILE = DearsBirthday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
