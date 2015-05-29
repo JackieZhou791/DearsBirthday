@@ -27,12 +27,6 @@ class BirthdayDetailViewController: UITableViewController {
     func buttonClick(sender:UIButton!)
     {
         println("hello world")
-        let addViewController =
-//        let AddViewControllerIdentifier = "CalendarHomeViewController"
-//        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-//        let addViewController: CalendarHomeViewController = storyboard.instantiateViewControllerWithIdentifier(AddViewControllerIdentifier) as! CalendarHomeViewController
-        self.navigationController?.pushViewController(addViewController, animated: true)
-        
     }
 
     
