@@ -75,7 +75,7 @@
         <!--Add Birthday-->
         <scene sceneID="7zE-Gv-IZX">
             <objects>
-                <tableViewController id="QUN-zX-kfq" customClass="BirthdayDetailViewController" customModule="DearsBirthday" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="BirthdayDetailViewController" id="QUN-zX-kfq" customClass="BirthdayDetailViewController" customModule="DearsBirthday" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="jq5-BI-6GN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,13 +112,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XZh-CL-3FI">
-                                                    <rect key="frame" x="113" y="8" width="46" height="30"/>
+                                                    <rect key="frame" x="8" y="8" width="90" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button">
+                                                    <state key="normal" title="Select Date">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="Mx3-57-tvx" kind="push" id="cbW-zs-J8w"/>
+                                                        <segue destination="Gp9-vC-OE3" kind="modal" id="DKu-7p-ih3"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -187,6 +187,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHO-vu-rxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-79.466666666666669" y="362.57333333333332"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rTh-Nh-e8v">
+            <objects>
+                <navigationController id="Gp9-vC-OE3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HFf-J9-11Z"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T2U-L4-Yg0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Mx3-57-tvx" kind="relationship" relationship="rootViewController" id="f2j-L4-EhY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRb-Pj-6Oj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2122" y="9"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="Iq9-5t-bwW">
@@ -298,11 +315,13 @@
                         <outlet property="daysOutSwitch" destination="gdJ-hy-h4q" id="mlI-gB-mh7"/>
                         <outlet property="menuView" destination="Iqo-bz-dQi" id="THg-KI-7ro"/>
                         <outlet property="monthLabel" destination="P1q-qj-zeg" id="DOI-4d-Rlr"/>
+                        <segue destination="aJo-PX-tWR" kind="unwind" identifier="SaveBirthdayDate" unwindAction="selectBirthdayDate:" id="Tyd-li-ZRB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5I-Vm-L2J" sceneMemberID="firstResponder"/>
+                <exit id="aJo-PX-tWR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2102" y="4"/>
+            <point key="canvasLocation" x="2555" y="9"/>
         </scene>
     </scenes>
     <resources>

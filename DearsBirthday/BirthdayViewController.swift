@@ -94,14 +94,14 @@ class BirthdayViewController: UITableViewController {
     }
     */
     
-    @IBAction func cancelToBirthdayViewController(segue:UIStoryboardSegue) {
-        
-        println("cancelToBirthdayViewController")
-    }
-    
-    @IBAction func saveBirthdayDetail(segue:UIStoryboardSegue) {
-        
-        println("saveBirthdayDetail")
-    }
+//    @IBAction func cancelToBirthdayViewController(segue:UIStoryboardSegue) {
+//        
+//        println("cancelToBirthdayViewController")
+//    }
+//    
+//    @IBAction func saveBirthdayDetail(segue:UIStoryboardSegue) {
+//        
+//        println("saveBirthdayDetail")
+//    }
     
 }

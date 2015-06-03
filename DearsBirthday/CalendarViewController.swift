@@ -103,6 +103,10 @@ extension CalendarViewController: CVCalendarViewDelegate {
     func didSelectDayView(dayView: CVCalendarDayView) {
         let date = dayView.date
         println("\(calendarView.presentedDate.commonDescription) is selected!")
+        
+        let sb = UIStoryboard(name:"Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("BirthdayDetailViewController") as! BirthdayDetailViewController
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
     func presentedDateUpdated(date: CVDate) {
